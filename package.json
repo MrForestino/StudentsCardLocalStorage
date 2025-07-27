@@ -1,0 +1,22 @@
+{
+  "name": "studentscard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.89.2",
+    "vite": "^7.0.4",
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-static-copy": "^3.1.1"
+  },
+  "dependencies": {
+    "98.css": "^0.1.21",
+    "handlebars": "^4.7.8",
+    "normalize.css": "^8.0.1"
+  }
+}
