@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <title>Student List</title>
+    <script type="module" crossorigin src="./assets/index-DeT8sOwX.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bh6lJhFS.css">
+  </head>
+  <body>
+    <div class="container">
+      <button id='openModalBtn'>Add Student</button>
+
+      <!--! MODAL WINDOW FOR ADDING STUDENTS-->
+      <div id='studentModal' class="modal-window hidden">
+        <div class="window modal-content">
+          <div class="title__bar">
+            <h3 class="title__bar__text">New Student</h3>
+          </div>
+          <div class="window__body">
+            <form action="" id='studentForm' class='form__container'>
+              <!--! Name  -->
+              <div class="field__row__stacked">
+                <label for="nameInput">Name:</label>
+                <input id='nameInput' type="text" required/>
+              </div>
+              <!--! Surname -->
+              <div class="field__row__stacked">
+                <label for="surnamenameInput">Surname:</label>
+                <input id='surnamenameInput' type="text" required/>
+              </div>
+              <!--! Age -->
+              <div class="field__row__stacked">
+                <label for="ageInput">Age: <span id="ageValue"></span> </label><br>
+                <input id='ageInput' type="range" min='18' max='50' required/>
+              </div>
+              <!--! Course -->
+              <div class="field__row__stacked">
+                <label for="courseInput">Cours:</label>
+                <input id='courseInput' type="text" required/>
+              </div>  
+              <!--! Faculty -->
+              <div class="field__row__stacked">
+                <label for="facultyInput">Faculty:</label>
+                <input id='facultyInput' type="text" required/>
+              </div>       
+              <!--! Buttons -->
+              <div class="field__row buttons__row">
+                <button type="submit" class="button">Save</button>
+                <button type="button" class="button" id="cancelBtn">Cancel</button>
+              </div>   
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--! MODAL WINDOW FOR EDIT STUDENTS-->
+      <div id='editStudentModal' class="modal-window hidden">
+        <div class="window modal-content">
+          <div class="title__bar">
+            <h3 class="title__bar__text">Edit Student</h3>
+          </div>
+          <div class="window__body">
+            <form action="" id='studentForm' class='form__container'>
+              <!--! Name  -->
+              <div class="field__row__stacked">
+                <label for="editNameInput">Name:</label>
+                <input id='editNameInput' type="text" required/>
+              </div>
+              <!--! Surname -->
+              <div class="field__row__stacked">
+                <label for="editSurnamenameInput">Surname:</label>
+                <input id='editSurnamenameInput' type="text" required/>
+              </div>
+              <!--! Age -->
+              <div class="field__row__stacked">
+                <label for="editAgeInput">Age: <span id="editAgeValue"></span> </label><br>
+                <input id='editAgeInput' type="range" min='18' max='50' required/>
+              </div>
+              <!--! Course -->
+              <div class="field__row__stacked">
+                <label for="editCourseInput">Cours:</label>
+                <input id='editCourseInput' type="text" required/>
+              </div>  
+              <!--! Faculty -->
+              <div class="field__row__stacked">
+                <label for="editFacultyInput">Faculty:</label>
+                <input id='editFacultyInput' type="text" required/>
+              </div>       
+              <!--! Buttons -->
+              <div class="field__row buttons__row">
+                <button type="submit" class="button">Update</button>
+                <button type="button" class="button" id="cancelBtn">Cancel</button>
+              </div>   
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--! Student list  -->
+      <ul class="student__list"></ul>
+    </div>
+  </body>
+</html>
