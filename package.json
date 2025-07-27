@@ -1,12 +1,15 @@
 {
   "name": "studentscard",
+  "homepages": "https://mrforestino.github.io/StudentsCardLocalStorage/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "sass-embedded": "^1.89.2",
@@ -16,6 +19,7 @@
   },
   "dependencies": {
     "98.css": "^0.1.21",
+    "gh-pages": "^6.3.0",
     "handlebars": "^4.7.8",
     "normalize.css": "^8.0.1"
   }
