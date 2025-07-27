@@ -1,7 +1,7 @@
 import '../scss/style.scss'
-import Handlebars from 'handlebars';
+
 import StudentTemplate from '../template-student-data.hbs?raw';
-const StudentData = Handlebars.compile(StudentTemplate);
+const StudentData = window.Handlebars.compile(StudentTemplate);
 
 const studentList = document.querySelector('.student__list');
 
